@@ -1,0 +1,146 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+ .chatpressai-chat-container {
+	max-width: 80%;
+	border: 1px solid #e0e0e0;
+	padding: 25px;
+	background: rgb(224 224 224 / 10%);
+}
+
+.chatpressai-chat-container .text-right {
+	text-align: right;
+}
+
+.chatpressai-chat-container #chatpressai_prompt {
+    width: 100%;
+    padding: 5px;
+    display: block;
+    font-size: 16px;
+    line-height: 27px;
+	height: 44px;
+}
+
+.chatpressai-chat-container .chatpressai_prompt {
+	position: relative;
+	display: block;
+	margin-top: 10px;
+}
+
+.chatpressai-chat-container .chatpressai_send_prompt {
+	position: absolute;
+	right: -1px;
+	top: 0px;
+	padding: 11px;
+}
+
+.chatpressai-chat-container #Chatpressai-Response {
+	max-height: 600px;
+	min-height: 300px;
+	overflow-y: scroll;
+}
+
+.chatpressai-chat-container #Chatpressai-Response>div {
+	position: relative;
+	padding: 10px;
+}
+
+.chatpressai-chat-container #Chatpressai-Response>div.chat-response {
+	padding-right: 38px;
+	white-space: pre-wrap;
+
+}
+
+.chatpressai-chat-container #Chatpressai-Response>div.chat-response p {
+	margin: 0px;
+
+}
+
+.chatpressai-chat-container #Chatpressai-Response>div.text-right {
+	background: #e0e0e0;
+}
+
+.chatpressai-chat-container .typing {
+	position: relative;
+}
+
+.chatpressai-chat-container .typing span {
+	content: "";
+	-webkit-animation: blink 1.5s infinite;
+	animation: blink 1.5s infinite;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+.chatpressai-chat-container .typing span:nth-child(2) {
+	-webkit-animation-delay: 0.2s;
+	animation-delay: 0.2s;
+}
+
+.chatpressai-chat-container .typing span:nth-child(3) {
+	-webkit-animation-delay: 0.4s;
+	animation-delay: 0.4s;
+}
+
+.chatpressai-chat-container .chatpressai-actions {
+	position: absolute;
+	right: 0px;
+	top: 0;
+	z-index: 1;
+}
+
+.chatpressai-chat-container .chatpressai-actions .chatpressai-actions-inner {
+	display: none;
+	border: 1px solid #c7c7c7;
+	position: relative;
+	top: 28px;
+	right: 2px;
+}
+
+.chatpressai-chat-container .chatpressai-actions .chatpressai-actions-inner>div {
+	padding: 10px;
+	background: #f5f5f5;
+}
+
+.chatpressai-chat-container .chatpressai-actions .chatpressai-toggle-actions {
+	background: #c7c7c7;
+    padding: 5px;
+    width: 50px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: #000;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+	box-sizing: content-box;
+}
+
+@-webkit-keyframes blink {
+	0% {
+		opacity: 0.1;
+	}
+
+	20% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0.1;
+	}
+}
+
+@keyframes blink {
+	0% {
+		opacity: 0.1;
+	}
+
+	20% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0.1;
+	}
+}
